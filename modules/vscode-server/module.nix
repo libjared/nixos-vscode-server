@@ -50,6 +50,7 @@ moduleConfig:
     (moduleConfig {
       name = "auto-fix-vscode-server";
       description = "Automatically fix the VS Code server used by the remote SSH extension";
+      restartIfChanged = true;
       serviceConfig = {
         # When a monitored directory is deleted, it will stop being monitored.
         # Even if it is later recreated it will not restart monitoring it.
